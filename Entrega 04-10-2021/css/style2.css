@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+[full-ht]{
+    height: 100vh;
+    width: 100%;
+}
+[d-flex]{
+    display: flex;
+}
+[align-items-center]{
+    align-items: center;
+}
+[justify-content-between]{
+    justify-content: space-between;
+}
+[justify-content-center]{
+    justify-content: center;
+}
+.yellow-bg{
+    background: #e5f904;
+}
+.pink-bg{
+    background: #f903b3;
+}
+.blue-bg{
+    background: #3538ff;
+    height: 100vh;
+}
+.green-bg{
+    background: #1ec904;
+    display: flex;
+    flex-direction: column;
+}
+h3{
+    font-size: 48px;
+    line-height: 1.4;
+    font-weight: 600;
+    padding: 10px 30px;
+    background: #000000;
+    color: #ffff;
+    text-transform: capitalize;
+    text-align: center;
+}
+header{
+    background: #000000;
+    color: #ffff;
+    position: sticky;
+    top: 0;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: end;
+}
+nav ul li a{
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 28px 15px;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    background: rgba(255,255,255,0.2);
+}
+.banner{
+    height: calc(100vh - 76px);
+}
+.slide{
+    flex: 1;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+.slide:nth-child(1){
+    background: url(../images/html.jpg);
+    background-position: center center;
+}
+.slide:nth-child(2){
+    background: url(../images/css.jpg);
+    background-position: center center;
+}
+.slide:nth-child(3){
+    background: url(../images/javascript.jpg);
+    background-position: center center;
+}
+.slide:nth-child(4){
+    background: url(../images/photoshop.jpg);
+    background-position: center center;
+}
+.slide:hover{
+    flex-grow: 5;
+}
+.slide .content{
+    bottom: 0;
+    margin: 40px;
+    padding: 30px;
+    background: #000;
+    color: #fff;
+    transition: 0s;
+    transform: translatey(100px);
+}
+.slide:hover .content{
+    visibility:  visible;
+    opacity: 1;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+    transform: translatey(0);
+}
